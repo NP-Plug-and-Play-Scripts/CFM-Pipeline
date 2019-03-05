@@ -1,0 +1,16 @@
+CFM-Pipeline Options file.
+This file contains the options for the cfm Pipeline. To edit just change the paths or variables behind the =.
+
+config: the config file for cfm-id
+parameters: the pretrained model for cfm-id which contains the probabilities of likely fragmentation points.
+prob_thresh: the threshhold at which the 
+cutoff_intensity: every peak with an intensity under this value is not kept. (scale from 0-900)
+molconvert_path: path to the molconvert install location
+
+Options_Begin
+config=param_config.txt
+parameters=/params_metab_ce_cfm/param_output0.log
+prob_thresh=0.001
+cutoff_intensity=120
+molconvert_path=/mnt/scratch/ozing003/jchem/jchemsuite/bin/
+Options_End
